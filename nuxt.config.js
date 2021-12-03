@@ -1,43 +1,24 @@
-export default {
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+import theme from '@nuxt/content-theme-docs'
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    title: 'docs-nuxt',
-    htmlAttrs: {
-      lang: 'en'
-    },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+export default theme({
+  loading: { color: '#5A0FC8' },
+  pwa: {
+    manifest: {
+      name: '京大保健診療所の存続を求める会'
+    }
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
-}
+  i18n: {
+    locales: () => [ {
+      code: 'ja',
+      iso: 'ja-JP',
+      file: 'ja-JP.js',
+      name: '日本語'
+    }, {
+      code: 'en',
+      iso: 'en-US',
+      file: 'en-US.js',
+      name: 'English'
+    }],
+    defaultLocale: 'ja'
+  },
+})
