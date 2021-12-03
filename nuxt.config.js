@@ -12,13 +12,14 @@ export default theme({
       code: 'ja',
       iso: 'ja-JP',
       file: 'ja-JP.js',
-      name: '日本語'
-    }, {
-      code: 'en',
-      iso: 'en-US',
-      file: 'en-US.js',
-      name: 'English'
-    }],
+      name: '日本語' }
+    // {
+    //   code: 'en',
+    //   iso: 'en-US',
+    //   file: 'en-US.js',
+    //   name: 'English'
+    // }
+  ],
     defaultLocale: 'ja'
-  },
+  }
 })
