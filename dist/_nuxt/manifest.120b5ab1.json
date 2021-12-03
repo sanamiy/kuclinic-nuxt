@@ -1,0 +1,11 @@
+{
+  "name": "京大保健診療所の存続を求める会",
+  "short_name": "ku_clinic_sonzoku",
+  "description": "## 概要",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00CD81",
+  "lang": "en"
+}
