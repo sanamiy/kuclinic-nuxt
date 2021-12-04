@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "保健診療所廃止に反対する有志によるサイト",
   "private": true,
+  "engines": {
+    "node": "16.x",
+    "yarn": "1.x"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
