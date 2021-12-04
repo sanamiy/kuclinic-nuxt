@@ -1,12 +1,18 @@
 {
   "name": "ku_clinic_sonzoku",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "保健診療所廃止に反対する有志によるサイト",
   "private": true,
+  "engines": {
+    "node": "16.x",
+    "yarn": "1.x.x"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "heroku-postbuild": "yarn run generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
