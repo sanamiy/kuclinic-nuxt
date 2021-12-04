@@ -1,7 +1,10 @@
 import theme from '@nuxt/content-theme-docs'
 
 export default theme({
-  loading: { color: '#5A0FC8' },
+  loading: { color: '#5280ff' },
+  docs: {
+    primaryColor: '#5280ff'
+  },
   pwa: {
     manifest: {
       name: '京大保健診療所の存続を求める会'
