@@ -1,7 +1,5 @@
 # 京大保健所の存続を求める会ウェブサイト
 
-## 概要
-
 nuxt で書いた web サイトを heroku でホスト
 
 @nuxt/content というパッケージを利用している
@@ -10,7 +8,7 @@ nuxt で書いた web サイトを heroku でホスト
 
 ## 自動公開
 
-main ブランチへ push すると，自動で公開されます
+main ブランチへ push すると，Heroku で自動で公開されます
 
 ## どうすれば push できるの？
 
@@ -75,6 +73,7 @@ $ yarn start
 
 # generate static project
 $ yarn generate
+$ yarn start
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

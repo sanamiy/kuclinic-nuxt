@@ -1,6 +1,7 @@
 {
   "name": "ku_clinic_sonzoku",
   "version": "1.0.0",
+  "description": "保健診療所廃止に反対する有志によるサイト",
   "private": true,
   "scripts": {
     "dev": "nuxt",
