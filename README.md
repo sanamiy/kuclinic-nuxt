@@ -43,17 +43,19 @@ main ブランチへ push すると，Heroku で自動で公開されます
 
 ## @nuxt/content
 
-@nuxt/content とは，Markdown ファイルを綺麗に表示してくれるパッケージです
+@nuxt/content とは，Markdown ファイルを綺麗に表示してくれるパッケージ
 
-自動で目次が作成されたり，章へのリンクが作成されたりします
+詳細は[こちら](https://content.nuxtjs.org/ja/themes-docs/#content-1)に
 
-Markdown の普通の記法の他，@nuxt/content [専用拡張記法](https://content.nuxtjs.org/ja/themes-docs/#content-1)が可能
+- `content/ja/` に記事編集者が書いた markdown ファイルをおき，`static/` に添付画像などを置く
+- `content/ja/*.md` ファイルを作成するとファイル名に基づき，自動でルーティングが行われる
+- `content/ja/*.md` ファイル上部には title, description, position, category, version, fullscreen を記入する
+- Markdown 部分では普通の記法の他，@nuxt/content 専用拡張機能が利用可能
 
-`content/` に記事編集者が書いた markdown ファイルをおき，`static` に添付画像などを置く
-
-## 他言語対応
+## 多言語対応
 
 日本語と英語に対応
+(現在英語対応は off)
 
 - content/ja
 - content/en
