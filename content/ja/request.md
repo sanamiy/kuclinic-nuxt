@@ -9,15 +9,17 @@ category: 記事
 
 2021 年 12 月 6 日に当会より、施設部環境安全保健課保健衛生掛にて提出した要求書を以下共有します。
 
+PDF: [https://drive.google.com/file/d/1XmgAK2cxmEIScIZ4ChgBYCzmRXW91rlm/view?usp=sharing](https://drive.google.com/file/d/1XmgAK2cxmEIScIZ4ChgBYCzmRXW91rlm/view?usp=sharing)
+
 ---
 
-京都大学施設部環境安全保健課 保健衛生掛 御中<br>
-環境安全保健機構長 吉﨑武尚 様<br>
-京都大学環境安全保健担当理事 村中孝史 様<br>
+京都大学施設部環境安全保健課 保健衛生掛 御中  
+環境安全保健機構長 吉﨑武尚 様  
+京都大学環境安全保健担当理事 村中孝史 様  
 京都大学総長 湊長博 様
 
-京大保健診療所の存続を求める会<br>
-ku.clinic.sonzoku@gmail.com<br>
+京大保健診療所の存続を求める会  
+ku.clinic.sonzoku@gmail.com  
 要求書提出人 山村沙南
 
 ## 要求書
