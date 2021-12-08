@@ -1,6 +1,6 @@
 ---
 title: 要求書
-descrition: トップページ
+descrition: 12/9 提出要求書
 position: 8
 category: 記事
 ---
