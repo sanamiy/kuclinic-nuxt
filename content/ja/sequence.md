@@ -18,9 +18,16 @@ category: 記事
 通知に先立つ、事前の利用者・学内関係者への意見調査や説明は一切なく、また、教授会による審議や、法的に定められた衛生委員会による審議を介していなかったことが確認されている。そして、この発表において、2022 年 2 月 1 日以降、保健診療所診察終了後の方針は一切示されていなかった。
 
 京都大学環境安全保健機構 『京都大学保健診療所（吉田・宇治・桂）の診療終了について』
-[http://www.hoken.kyoto-u.ac.jp/blog/2021/12/01/about-clinic-close/](http://www.hoken.kyoto-u.ac.jp/blog/2021/12/01/about-clinic-close/)
-
+[http://www.hoken.kyoto-u.ac.jp/blog/2021/12/01/about-clinic-close/](http://www.hoken.kyoto-u.ac.jp/blog/2021/12/01/about-clinic-close/)  
 PDF: [2021 年 12 月 4 日閲覧・保存](https://drive.google.com/file/d/1VXTpHjbqb8XBbEwnye7sglSoz6vHirxk/view?usp=sharing)
+
+また、同日午後、京都大学有志学生が個人名義で change.org にて署名活動「
+[京都大学: 京都大学保健診療所を廃止しないで下さい](https://chng.it/xGVS9jq9JF)」
+を開始した
+
+## 12 月 2 日
+
+京大保健診療所の存続を求める会設立
 
 ## 12 月 6 日
 
@@ -35,7 +42,8 @@ PDF: [2021 年 12 月 4 日閲覧・保存](https://drive.google.com/file/d/1VXT
 
 ## 12 月 8 日
 
-保健診療所の HP が更新され、2021 年 12 月 8 日での初診受付終了予定が変更されることが告知された。
-[http://www.hoken.kyoto-u.ac.jp/blog/2021/12/08/about-clinic-close/](http://www.hoken.kyoto-u.ac.jp/blog/2021/12/08/about-clinic-close/)
+京都大学環境安全保健機構の HP が更新され、2021 年 12 月 8 日での初診受付終了予定が変更されることが、、環境安全保健機構長ならびに学生・環境安全保健担当理事の名義で告知された。
+また、吉田本部、北部、吉田南、桂、宇治の各キャンパスの学生相談窓口を整備して、臨床心理士や公認心理師の資格を有する相談員を配置し、各相談窓口で医師の診断が必要と判断された場合には、精神神経科医の診断を受けることができるようにする、さらに継続的な治療が必要な場合は、学生の希望および精神神経科医の判断により専門的医療機関を紹介するという方針が公開された。
 
+京都大学環境安全保健機構 『京都大学保健診療所（吉田・宇治・桂）の診療終了について』[http://www.hoken.kyoto-u.ac.jp/blog/2021/12/08/about-clinic-close/](http://www.hoken.kyoto-u.ac.jp/blog/2021/12/08/about-clinic-close/)  
 PDF: [2021 年 12 月 9 日閲覧・保存](https://drive.google.com/file/d/1Nxfsw-OdgPrATwJd3Qe-vJyJI3NMGdPQ/view?usp=sharing)
