@@ -1,8 +1,8 @@
 ---
-title: ログイン
+title: アカウント作成
 description: 署名を集めています
-position: 19
+position: 18
 category: 署名
 ---
 
-<sign-in></sign-in>
+<sign-up />

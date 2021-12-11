@@ -1,24 +1,24 @@
 <template>
   <div>
-    <h3> アカウント作成 </h3>
-    <form class="form-signin" @submit.prevent="userLogin">
+    <form class="form-signin" @submit.prevent="createUser">
       <div>
-      <label for="account-email" class="label">メールアドレス</label>
+      <label for="signup-email" class="label">学内メールアドレス</label>
       <input
-        id="account-email"
+        id="signup-email"
         v-model="email"
         class="input-gray"
         type="email"
         pattern=".+@.+\.kyoto-u\.ac\.jp"
-        placeholder="@   .kyoto-u.ac.jp"
+        placeholder=".kyoto-u.ac.jp"
+        autocomplete="email"
         required
       />
       </div>
 
       <div>
-      <label for="account-password" class="label">パスワード</label>
+      <label for="signup-password1" class="label">パスワード</label>
       <input
-        id="account-password"
+        id="signup-password1"
         v-model="password1"
         class="input-gray"
         type="password"
@@ -28,10 +28,10 @@
       </div>
 
       <div>
-      <label for="account-password" class="label">パスワード</label>
+      <label for="signup-password2" class="label">パスワード確認</label>
       <input
-        id="account-password"
-        v-model="password"
+        id="signup-password2"
+        v-model="password2"
         class="input-gray"
         type="password"
         minlength="8"
@@ -43,50 +43,40 @@
     </form>
     </div>
 </template>
+
 <script>
 export default {
   data: () => ({
     email: "",
     password1: "",
-    password2: ""
+    password2: "",
+    user: ""
   }),
+  methods: {
+    async createUser() {
+      if (this.password1 !== this.password2) {
+        this.$toast.error("パスワードが一致しません")
+        return
+      }
+      const actionCodeSettings = {
+        url: "https://ku-clinic-sonzoku.herokuapp.com/user",
+        handleCodeInApp: false,
+      }
+      try {
+        await this.$fire.auth
+          .createUserWithEmailAndPassword(
+            this.email,
+            this.password1
+          )
+        const {user} = await this.$fire.auth.signInWithEmailAndPassword(this.email, this.password1)
+        await user.sendEmailVerification(actionCodeSettings)
+        this.$toast.clear()
+        this.$toast.success('アカウント登録メールを送信しました')
+        this.$router.push('/user')
+      } catch (error){
+        this.$toast.error(error.message)
+      }
+    }
+  }
 }
 </script>
-<style scoped>
-.title-text{
-  font-size:  1.6em;
-}
-.input-gray {
-  width: 20em;
-  height: 2em;
-  outline: none;
-  border: none;
-  box-sizing: border-box;
-  border-radius: 0.4em;
-  display: block;
-  background-color: whitesmoke;
-  padding: 0 0.6em;
-  margin: 0.5em 0em 1em 0;
-}
-.input-gray::placeholder {
-  color: silver;
-}
-
-.button-submit {
-  display: block;
-  height: 2em;
-  border-radius: 0.4em;
-  width: 9em;
-  border: none;
-  background: #5280ff;
-  color: white;
-}
-
-form:invalid .button-submit {
-  cursor: not-allowed;
-  border: none;
-  outline: none;
-  background: lightgray;
-}
-
-</style>
