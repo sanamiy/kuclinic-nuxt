@@ -103,7 +103,8 @@ export default {
           type: this.type,
           email: this.email,
           post1: this.post1,
-          post2: this.post2
+          post2: this.post2,
+          updatedAt: this.$fireModule.firestore.FieldValue.serverTimestamp()
         })
         this.$toast.success("署名を送信しました")
         this.$router.push("/user")
