@@ -1,9 +1,9 @@
 import theme from '@nuxt/content-theme-docs'
 
 export default theme({
-  loading: { color: '#5280ff' },
+  loading: { color: '#7f9cf5' },
   docs: {
-    primaryColor: '#5280ff'
+    primaryColor: '#7f9cf5'
   },
   css: ['static/global.css'],
   pwa: {
