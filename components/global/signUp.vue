@@ -63,6 +63,7 @@ export default {
         handleCodeInApp: false,
       }
       try {
+        this.$toast.info("少々お待ちください")
         await this.$fire.auth
           .createUserWithEmailAndPassword(
             this.email,

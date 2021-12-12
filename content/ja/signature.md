@@ -15,4 +15,4 @@ category: 署名
 
 1. [ログイン](/signin)
 
-1. [署名](/signature)
+1. [署名](/signature-edit)
