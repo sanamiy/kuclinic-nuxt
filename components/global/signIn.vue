@@ -51,8 +51,7 @@ export default {
           }
           this.$toast.clear()
           this.$toast.success('ログインしました')
-          this.$router.push('/user')
-          
+          this.$router.push('/signature-edit')
         })
         .catch((error) => {
           this.$toast.error(error.message)

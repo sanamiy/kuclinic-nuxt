@@ -71,7 +71,6 @@ export default {
   }),
   async beforeMount(){
     this.$fire.auth.onAuthStateChanged((user) => {
-      console.log(user)
       if (user == null) { return }
       this.isLoggedIn = true
       if (user.emailVerified == false){ return }
@@ -107,7 +106,7 @@ export default {
           updatedAt: this.$fireModule.firestore.FieldValue.serverTimestamp()
         })
         this.$toast.success("署名を送信しました")
-        this.$router.push("/user")
+        this.$router.push("/signature")
       } catch (error) {
         this.$toast.error(error)
         console.log('%c' + error, 'color:red')

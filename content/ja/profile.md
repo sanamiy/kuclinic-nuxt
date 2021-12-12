@@ -15,7 +15,7 @@ items:
 
 ## 目標
 
-<list :items="items"></list>
+<list :items="items" type="primary" ></list>
 
 ## 求める会の活動
 

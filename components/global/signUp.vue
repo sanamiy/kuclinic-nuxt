@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form class="form-signin" @submit.prevent="createUser">
+    <form class="form-signup" @submit.prevent="createUser">
       <div>
       <label for="signup-email" class="label">学内メールアドレス</label>
       <input
@@ -16,7 +16,7 @@
       </div>
 
       <div>
-      <label for="signup-password1" class="label">パスワード</label>
+      <label for="signup-password1" class="label">パスワード(8文字以上)</label>
       <input
         id="signup-password1"
         v-model="password1"
@@ -50,7 +50,6 @@ export default {
     email: "",
     password1: "",
     password2: "",
-    user: ""
   }),
   methods: {
     async createUser() {
@@ -58,8 +57,9 @@ export default {
         this.$toast.error("パスワードが一致しません")
         return
       }
+      const continueUrl = process.env.baseUrl + '/signature'
       const actionCodeSettings = {
-        url: "https://ku-clinic-sonzoku.herokuapp.com/user",
+        url: continueUrl,
         handleCodeInApp: false,
       }
       try {
@@ -69,10 +69,11 @@ export default {
             this.password1
           )
         const {user} = await this.$fire.auth.signInWithEmailAndPassword(this.email, this.password1)
+        await user.updateProfile({displayName: '署名にご協力いただく皆'})
         await user.sendEmailVerification(actionCodeSettings)
         this.$toast.clear()
         this.$toast.success('アカウント登録メールを送信しました')
-        this.$router.push('/user')
+        this.$router.push('/signature')
       } catch (error){
         this.$toast.error(error.message)
       }

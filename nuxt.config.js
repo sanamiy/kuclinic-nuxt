@@ -15,6 +15,9 @@ export default theme({
   toast: {
     duration: 5000
   },
+  env:{
+    baseUrl: process.env.BASE_URL
+  },
   firebase: {
     config: { 
       apiKey: process.env.API_KEY,
