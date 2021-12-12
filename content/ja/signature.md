@@ -16,3 +16,5 @@ category: 署名
 1. [ログイン](/signin)
 
 1. [署名](/signature-edit)
+
+1. <sign-out></sign-out>
