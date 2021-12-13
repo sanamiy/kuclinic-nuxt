@@ -8,7 +8,7 @@
         v-model="email"
         class="input-gray"
         type="email"
-        pattern=".+@.+\.kyoto-u\.ac\.jp"
+        pattern=".+@(.+\.|)kyoto-u\.ac\.jp"
         placeholder=".kyoto-u.ac.jp"
         autocomplete="email"
         required
