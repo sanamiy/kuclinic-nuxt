@@ -1,13 +1,38 @@
 import theme from '@nuxt/content-theme-docs'
 
 export default theme({
-  loading: { color: '#5280ff' },
+  loading: { color: '#7f9cf5' },
   docs: {
-    primaryColor: '#5280ff'
+    primaryColor: '#7f9cf5'
   },
+  css: ['static/global.css'],
   pwa: {
     manifest: {
       name: '京大保健診療所の存続を求める会'
+    },
+  },
+  modules: ['@nuxtjs/firebase', '@nuxtjs/toast'],
+  toast: {
+    duration: 5000
+  },
+  env:{
+    baseUrl: process.env.BASE_URL
+  },
+  firebase: {
+    config: { 
+      apiKey: process.env.API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
+      projectId: process.env.PROJECT_ID,
+      storageBucket: process.env.STORAGE_BUCKET,
+      messagingSenderId: process.env.MESSAGING_SENDER_ID,
+      appId: process.env.APP_ID
+    },
+    services:{
+      auth: {
+        persistence: 'local',
+        ssr: false,
+      },
+      firestore: true,
     }
   },
   i18n: {
