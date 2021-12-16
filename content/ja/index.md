@@ -12,6 +12,7 @@ category: 記事
 ## あなたができること
 
 - 正しい情報を集める (まずは当 HP をどうぞ)
+- [学内署名](https://ku-clinic-sonzoku.herokuapp.com/signup)に参加する
 - [change.org](https://chng.it/xGVS9jq9JF) で署名
 - [学生意見箱](https://www.kyoto-u.ac.jp/ja/education-campus/cli/mail) に投稿
 - 周りの人にこの問題や署名を伝える
