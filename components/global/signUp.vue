@@ -9,7 +9,7 @@
         class="input-gray"
         type="email"
         pattern=".+@(.+\.|)kyoto-u\.ac\.jp"
-        placeholder=".kyoto-u.ac.jp"
+        placeholder="kyoto-u.ac.jp"
         autocomplete="email"
         required
       />
