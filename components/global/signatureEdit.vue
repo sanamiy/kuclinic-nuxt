@@ -5,13 +5,22 @@
   <div v-if="isLoggedIn && isVerified">
     <form class="form-signin" @submit.prevent="updateSignature">
 
-     <div class="radios">
+      <div class="radios">
         <div>
-        <input id="gakusei" v-model="type" name="userType" type="radio" value="学生" required/>
-        <label class="label" for="gakusei"> 学生</label>
-        </div><div>
-        <input id="kyoushokuin" v-model="type" name="userType" type="radio" value="教職員" />
-        <label class="label" for="kyoushokuin"> 教職員 </label>
+          <input id="gakusei" v-model="type" name="userType" type="radio" value="学生" required/>
+          <label class="label" for="gakusei"> 学生</label>
+        </div>
+        <div>
+          <input id="kyoushokuin" v-model="type" name="userType" type="radio" value="教職員" />
+          <label class="label" for="kyoushokuin"> 教職員 </label>
+        </div>
+        <div>
+          <input id="sotsugyousei" v-model="type" name="userType" type="radio" value="卒業生" required/>
+          <label class="label" for="sotsugyousei"> 卒業生</label>
+        </div>
+        <div>
+          <input id="motokyoushokuin" v-model="type" name="userType" type="radio" value="元教職員" />
+          <label class="label" for="motokyoushokuin"> 教職員 </label>
         </div>
       </div>
 
