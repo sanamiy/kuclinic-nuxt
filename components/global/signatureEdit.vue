@@ -37,13 +37,14 @@
       </div>
 
       <div>
-        <label v-if="this.emailType != '同窓生'" for="signature-department" class="label">学部・部局</label>
+        <label v-if="this.emailType !== '同窓生'" for="signature-department" class="label">学部・部局</label>
         <label v-if="this.emailType == '同窓生'" for="signature-department" class="label">元学部・部局</label>
         <v-select :options="options" class="select-box" v-model="post1" id="signature-department"></v-select>
       </div>
 
       <div>
-        <label v-if="this.emailType != '同窓生'" for="signature-department2" class="label">所属詳細</label>
+        <label v-if="this.emailType == '学生'" for="signature-department" class="label">学科・学年等</label>
+        <label v-if="this.emailType == ''" for="signature-department2" class="label">所属詳細</label>
         <label v-if="this.emailType == '同窓生'" for="signature-department2" class="label">元所属詳細</label>
         <input
           id="signature-department"
