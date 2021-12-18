@@ -1,7 +1,7 @@
 {
   "name": "ku_clinic_sonzoku",
-  "version": "1.0.1",
-  "description": "保健診療所廃止に反対する有志によるサイト",
+  "version": "1.0.2",
+  "description": "京大保健診療所の存続を求める会ウェブサイト",
   "private": true,
   "engines": {
     "node": "16.x",
@@ -17,6 +17,10 @@
   "dependencies": {
     "@nuxt/content": "^1.15.1",
     "@nuxt/content-theme-docs": "^0.11.1",
-    "nuxt": "^2.15.3"
+    "@nuxtjs/firebase": "^8.1.1",
+    "@nuxtjs/toast": "^3.3.1",
+    "firebase": "^9.6.0",
+    "nuxt": "^2.15.3",
+    "vue-select": "^3.16.0"
   }
 }

@@ -5,13 +5,27 @@ position: 0
 category: 記事
 ---
 
-保健診療所廃止に反対する有志のグループによるブログです。
+京都大学保健診療所の存続を願う学生有志によるサイトです
 
-## 現在の状況と直近の方針・お願いについて
+当会は、事前に代替案の提示や関係者への説明を行わず唐突に京都大学保健診療所を廃止することに反対し、京都大学に対し診療所機能の存続を求めています
 
-現在、京都大学保健診療所が利用者や関係者への事前の連絡・相談なく診療を終了するという[通告](http://www.hoken.kyoto-u.ac.jp/blog/2021/12/01/about-clinic-close/)が発表されています。我々京大保健診療所の存続を求める会はこの唐突な診断終了に反対しており、直近の方針として、**12月8日**に迫る神経科初診受付終了を阻止するために、**12月6日**に京都大学に対して診療所機能の存続を求める要求書と反対署名の提出を予定しています。診療終了を防ぐために一筆でも多くの署名を集めたいと考えておりますので、ぜひ下のリンクより署名にご参加いただけますようお願い申し上げます。
+## あなたができること
 
-署名：[京都大学保健診療所を廃止しないで下さい](https://www.change.org/p/%E4%BA%AC%E9%83%BD%E5%A4%A7%E5%AD%A6-%E4%BA%AC%E9%83%BD%E5%A4%A7%E5%AD%A6%E4%BF%9D%E5%81%A5%E8%A8%BA%E7%99%82%E6%89%80%E3%82%92%E5%BB%83%E6%AD%A2%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%B8%8B%E3%81%95%E3%81%84?original_footer_petition_id=&grid_position=&pt=)
+- 正しい情報を集める (まずは当 HP をどうぞ)
+- [学内署名](https://ku-clinic-sonzoku.herokuapp.com/signature) に参加する
+- [change.org](https://chng.it/xGVS9jq9JF) で署名
+- [学生意見箱](https://www.kyoto-u.ac.jp/ja/education-campus/cli/mail) に投稿
+- 周りの人にこの問題や署名を伝える
+- [LINE オープンチャット](https://line.me/ti/g2/Su6OHftIKf5GREjC4c1Ra4CvBvj86Tok6U_Pmg) で情報交換
 
+保健診療所の存続のためにはあなたの力が必要です。
 
-また、もしよければ署名運動の拡大と診療所終了をめぐる状況の共有のために、署名のリンクやこのサイトをSNS等で拡散して頂けますと誠に幸いです。
+ご協力をよろしくお願いします。
+
+## 問い合わせ先
+
+📩 email: ku.clinic.sonzoku@gmail.com
+
+🐥 twitter: [@hoken_sonzoku](https://twitter.com/hoken_sonzoku)
+
+💬 オープンチャット: [京大保健診療所の存続を求める会\_情報共有グループ](https://line.me/ti/g2/Su6OHftIKf5GREjC4c1Ra4CvBvj86Tok6U_Pmg)
