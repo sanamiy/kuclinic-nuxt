@@ -23,8 +23,7 @@ category: 記事
 [http://www.hoken.kyoto-u.ac.jp/blog/2021/12/01/about-clinic-close/](http://www.hoken.kyoto-u.ac.jp/blog/2021/12/01/about-clinic-close/)  
 PDF: [2021 年 12 月 4 日閲覧・保存](https://drive.google.com/file/d/1VXTpHjbqb8XBbEwnye7sglSoz6vHirxk/view?usp=sharing)
 
-また、同日午後、京都大学有志学生が個人名義で change.org にて署名活動「
-[京都大学: 京都大学保健診療所を廃止しないで下さい](https://chng.it/xGVS9jq9JF)」
+また、同日午後、京都大学有志学生が個人名義で change.org にて署名活動「[京都大学: 京都大学保健診療所を廃止しないで下さい](https://chng.it/xGVS9jq9JF)」
 を開始した
 
 ## 12 月 2 日
