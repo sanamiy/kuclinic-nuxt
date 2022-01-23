@@ -73,7 +73,7 @@ export default {
         await user.updateProfile({displayName: '署名にご協力いただく皆'})
         await user.sendEmailVerification(actionCodeSettings)
         this.$toast.clear()
-        this.$toast.success('アカウント登録メールを送信しました')
+        this.$toast.success('メールを送信しました。メール内のリンクをクリックしアカウントを有効化してください')
         this.$router.push('/signature')
       } catch (error){
         this.$toast.error(error.message)
