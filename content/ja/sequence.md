@@ -70,3 +70,7 @@ PDF: [2021 年 12 月 9 日閲覧・保存](https://drive.google.com/file/d/1Nxf
 
 京都大学環境安全保健機構の HP が更新され、保健診療所閉鎖の日程が公開された。また、紹介される神経科が外部の機関であることが確定した。[http://www.hoken.kyoto-u.ac.jp/blog/2022/01/19/about-clinic-close/](http://www.hoken.kyoto-u.ac.jp/blog/2022/01/19/about-clinic-close/)
 PDF: [2021 年 1 月 24 日閲覧・保存](https://drive.google.com/file/d/1DAqSCCWtu5w-4dHa6eFgdGfQ7aAkANEX/view?usp=sharing)
+
+## 1 月 21 日
+
+京都大学の[学生意見箱のウェブサイト](https://www.kyoto-u.ac.jp/ja/education-campus/cli/mail)が変更され、保健診療所関連の意見に対する回答が掲載されていることが確認された。
