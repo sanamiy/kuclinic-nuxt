@@ -3,6 +3,7 @@ title: 問題経緯
 description: 保健診療所終了問題の経緯を説明
 position: 3
 category: 記事
+fullscreen: true
 ---
 
 2021 年 12 月 9 日 更新
