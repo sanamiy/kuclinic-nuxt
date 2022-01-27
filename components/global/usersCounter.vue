@@ -1,11 +1,20 @@
 <template>
-  
+  <div>
+    {{ usersCount }}
+  </div>
 </template>
 <script>
 export default {
+  data: () => ({
+    usersCount: ""
+  }),
 async beforeMount(){
-const userRef = this.$fire.firestore.collection('users').doc(user.uid)
-      if (userRef == null){ return }
-}
+  const usersDataRef = this.$fire.firestore.collection('usersData').doc('doc')
+      if (usersDataRef == null){ return }
+      usersDataRef.get()
+       .then((usersDataDoc)=>{
+         this.usersCount = usersDataDoc.data().usersCount
+       })
+  }
 }
 </script>
