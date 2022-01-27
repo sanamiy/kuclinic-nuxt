@@ -21,7 +21,7 @@ export default theme({
   },
   env:{
     herokuUrl: 'https://' + process.env.HEROKU_APP_NAME + '.herokuapp.com',
-    baseUrl: process.env.BASE_URL || process.env.herokuUrl
+    baseUrl: process.env.BASE_URL || 'https://' + process.env.HEROKU_APP_NAME + '.herokuapp.com'
   },
   firebase: {
     config: { 
