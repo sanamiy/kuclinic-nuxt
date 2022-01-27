@@ -60,7 +60,8 @@ export default {
       const continueUrl = process.env.baseUrl + '/signature'
       const actionCodeSettings = {
         url: continueUrl,
-        handleCodeInApp: false,
+        handleCodeInApp: true,
+        dynamicLinkDomain: 'links.ku-clinic-sonzoku.org',
       }
       try {
         this.$toast.info("少々お待ちください")
@@ -69,11 +70,9 @@ export default {
             this.email,
             this.password1
           )
-        const {user} = await this.$fire.auth.signInWithEmailAndPassword(this.email, this.password1)
-        await user.updateProfile({displayName: '署名にご協力いただく皆'})
-        await user.sendEmailVerification(actionCodeSettings)
+        await this.$fire.auth.sendSignInLinkToEmail(this.email, actionCodeSettings)
         this.$toast.clear()
-        this.$toast.success('メールを送信しました。メール内のリンクをクリックしアカウントを有効化してください')
+        this.$toast.success('メールを送信しました。メール内のリンクからログインしてください')
         this.$router.push('/signature')
       } catch (error){
         this.$toast.error(error.message)
