@@ -7,9 +7,11 @@ category: 署名
 
 <users-counter></users-counter>
 
-京都大学の学生・教職員・卒業生・元教職員を対象として署名を集めています。署名には学内メールアドレス（kyoto-u.ac.jp）または[生涯メール](http://www.alumni.kyoto-u.ac.jp/)（kyoto-u.jp）のいずれかが必要です。
+京都大学の学生・教職員・卒業生・元教職員を対象として署名を集めています。
 
-学内署名は change.org で集めた署名と併せて、提出予定です
+学内メールアドレス（kyoto-u.ac.jp）または、[生涯メール](http://www.alumni.kyoto-u.ac.jp/)（kyoto-u.jp）のいずれかを用いて署名できます。
+
+学内署名は change.org で集めた署名と併せて、提出予定です。
 
 ## 手順
 
