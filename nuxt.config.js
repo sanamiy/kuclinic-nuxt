@@ -1,14 +1,19 @@
 import theme from '@nuxt/content-theme-docs'
 
 export default theme({
+
   loading: { color: '#7f9cf5' },
   docs: {
     primaryColor: '#7f9cf5'
   },
   css: ['static/global.css'],
   pwa: {
+    meta: {
+      name: '京大保健診療所の存続を求める会',
+      theme_color: 'white'
+    },
     manifest: {
-      name: '京大保健診療所の存続を求める会'
+      name: '京大保健診療所の存続を求める会',
     },
   },
   modules: ['@nuxtjs/firebase', '@nuxtjs/toast'],
