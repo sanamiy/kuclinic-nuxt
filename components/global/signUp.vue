@@ -57,11 +57,11 @@ export default {
         this.$toast.error("パスワードが一致しません")
         return
       }
-      const continueUrl = process.env.baseUrl + '/signature'
+      const continueUrl = process.env.baseUrl + "/signature-edit"
       const actionCodeSettings = {
         url: continueUrl,
         handleCodeInApp: true,
-        dynamicLinkDomain: 'links.ku-clinic-sonzoku.org',
+        dynamicLinkDomain: 'links.ku-clinic-sonzoku.org'
       }
       try {
         this.$toast.info("少々お待ちください")
@@ -69,11 +69,11 @@ export default {
           .createUserWithEmailAndPassword(
             this.email,
             this.password1
-          )
+        )
         await this.$fire.auth.sendSignInLinkToEmail(this.email, actionCodeSettings)
         this.$toast.clear()
         this.$toast.success('メールを送信しました。メール内のリンクからログインしてください')
-        this.$router.push('/signature')
+        this.$router.push('/signature-edit')
       } catch (error){
         this.$toast.error(error.message)
       }
