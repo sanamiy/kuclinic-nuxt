@@ -1,6 +1,6 @@
 <template>
-  <div>
-    {{ usersCount }}
+  <div >
+   現在 {{ usersCount }} 筆
   </div>
 </template>
 <script>
