@@ -60,11 +60,11 @@ export default {
       const continueUrl = process.env.baseUrl + "/signature-edit"
       const actionCodeSettings = {
         url: continueUrl,
-        handleCodeInApp: true,
-        dynamicLinkDomain: 'links.ku-clinic-sonzoku.org'
+        handleCodeInApp: true
       }
       try {
         this.$toast.info("少々お待ちください")
+        console.log(continueUrl)
         await this.$fire.auth
           .createUserWithEmailAndPassword(
             this.email,
@@ -75,6 +75,7 @@ export default {
         this.$toast.success('メールを送信しました。メール内のリンクからログインしてください')
         this.$router.push('/signature-edit')
       } catch (error){
+        console.log(error)
         this.$toast.error(error.message)
       }
     }
