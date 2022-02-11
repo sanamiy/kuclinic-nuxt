@@ -21,7 +21,8 @@
 export default {
   data: () => ({
     email: "",
-    randomPassword:""
+    randomPassword:"",
+    newEmail: true
   }),
   methods: {
     async createUser() {
@@ -31,26 +32,39 @@ export default {
         handleCodeInApp: true
       }
       this.$toast.info("少々お待ちください")
-      
-      // まだアカウントが存在していない場合
-        //アカウントを作成する
+
+      //アカウントが既に存在するかどうか確認する
+      const providers = await this.$fire.auth.fetchSignInMethodsForEmail(this.email);
+      if (providers.findIndex(p => p === this.$fire.auth.EmailAuthProvider.EMAIL_PASSWORD_SIGN_IN_METHOD) !== -1) {
+        this.$toast.info("既に登録されたメールアドレスです");
+        newEmail = false
+        return;
+      } 
+       // まだアカウントが存在していない場合アカウントを作成する
       this.randomPassword = Math.random().toString(30).slice(2)
       this.$fire.auth.createUserWithEmailAndPassword(
         this.email,
         this.randomPassword
-      ).then((user)=> {})
         // ユーザー名を設定する
-      
-      // 存在していた場合はそのまま
-      // サインインリンクを送信する
-      await this.$fire.auth.sendSignInLinkToEmail(this.email, actionCodeSettings)
-      this.$toast.success('メールを送信しました。メール内のリンクからログインしてください')
-      this.$router.push(`/signature?accountCreated=1`)
-    
-      console.log(error)
-      this.$toast.error(error.message)
-      }
+        ).then((user)=> {
+          user.updateProfile({
+            displayName: "署名にご協力くださる皆"
+          })
+        }).catch((error)=>{
+          this.$toast.error(error)
+        })
+      // 存在していた場合はそのままサインインリンクを送信する
+      this.$fire.auth.sendSignInLinkToEmail(this.email, actionCodeSettings)
+      .then((res)=>{
+          this.$toast.success('メールを送信しました。メール内のリンクからログインしてください')
+          this.$router.push(`/signature?accountCreated=1`)
+      })
+      .catch(( )=>{
+        console.log(error)
+        this.$toast.error(error.message)
+      })
     }
   }
 }
+
 </script>
